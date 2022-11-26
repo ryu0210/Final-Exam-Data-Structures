@@ -1,11 +1,12 @@
-K
-testing
-1
-2
-3
+#include <iostream>
+#include <sstream>
+#include <algorithm>
+#include <string>
 
-dasdas
-fatatata
-tatatatata
+#include "CourseAdministration.h"
 
-blablablablabla
+using namespace std;
+
+int main(){
+  
+}
