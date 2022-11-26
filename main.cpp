@@ -192,3 +192,39 @@ int main(){
 
 
 	FinalGPA = Sampoerna.SemGPA(TotalGPA, creditsum);
+	
+	/** =========================================================================== */
+
+    /// To set the conditions for next semester application
+
+    cout << "==============================================================================================\n" << endl;
+
+	int FinalCredits;
+
+	if(FinalGPA >= 3.5){
+		FinalCredits = 24;
+		cout << "Student Name: " << Name << endl;
+		cout << "Cumulative GPA: " << Sampoerna.round(FinalGPA) << endl;
+		cout << "Maximum Credits: " << FinalCredits << endl;
+		cout << "\nPlease proceed to apply!\n" << endl;
+
+	} else if(FinalGPA >= 3.0 && FinalGPA <3.5){
+		FinalCredits = 21;
+		cout << "Student Name: " << Name << endl;
+		cout << "Cumulative GPA: " << Sampoerna.round(FinalGPA) << endl;
+		cout << "Maximum Credits: " << FinalCredits << endl;
+		cout << "\nPlease proceed to apply!\n" << endl;
+
+	} else if(FinalGPA > 2.0 && FinalGPA < 3.0){
+		FinalCredits = 18;
+		cout << "Student Name: " << Name << endl;
+		cout << "Cumulative GPA: " << Sampoerna.round(FinalGPA) << endl;
+		cout << "Maximum Credits: " << FinalCredits << endl;
+		cout << "\nPlease proceed to apply!\n" << endl;
+
+	} else {
+		cout << "Student Name: " << Name << endl;
+		cout << "Cumulative GPA: " << Sampoerna.round(FinalGPA) << endl;
+		cout << Name << " failed the semester!" << endl;
+		FinalCredits = 0;
+	}
