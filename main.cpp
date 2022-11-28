@@ -36,6 +36,19 @@ void push(float score){
 	}
 }
 
+/** =========================================================================== */
+
+/// For Main Menu 3: Sort Courses of Student
+
+bool comparator(string a,string b)
+{
+    return a<b;
+} // An algorithm library function that compares for sorting algorithm
+
+// Data structure to store a binary tree node
+
+/** =========================================================================== */
+
 int main(){
   bool limit = true;
     CourseAdministration Sampoerna;
