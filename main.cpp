@@ -509,3 +509,101 @@ int main(){
 
 
     cout << "\nApplication Completed, please re-evaluate!\n" << endl;
+
+	
+int menu; /// Button to choose menu
+
+    bool limit2 = true; /// To limit the main menu bar
+    bool deletor = false; /// To detect the deletor for main menu 1
+    bool sorter = false; /// To detect the sorter for main menu 1
+    bool LemonTree = false; /// To detect the Traversal for main menu 1
+
+    int ListNo2 = 1; /// To show and navigate the list number for the courses to delete
+    int key; /// Button to select which courses to delete
+    int progress; /// Button to add more students or end the program
+
+    string t1, t2, t3, t4, t5, t6, t7, t8; /// For Post Order Traversal
+    t1 = CourseNo[0];
+    t2 = CourseNo[1];
+    t3 = CourseNo[2];
+    t4 = CourseNo[3];
+    t5 = CourseNo[4];
+    t6 = CourseNo[5];
+    t7 = CourseNo[6];
+    t8 = CourseNo[7];
+
+    while (limit2 == true){
+        Sampoerna.Menubar(Name);
+        cout << "\nChoose Evaluation Option ";
+        cin >> menu;
+        cout << "\n==============================================================================================" << endl;
+        cout << "==============================================================================================" << endl;
+
+        /** =========================================================================== */
+
+        /// Main Menu 1: Print out all students recorded
+
+        if (menu == 1){
+
+            
+        }
+
+        /** =========================================================================== */
+
+        /// Main Menu 2: Delete Certain Courses of Student
+
+        else if (menu == 2){           
+
+        }
+        /** =========================================================================== */
+
+        /// Main Menu 3: Sort Courses of Student
+
+        else if (menu == 3){
+            
+        }
+
+        /** =========================================================================== */
+
+        /// Main Menu 4: To Sort using Courses of Student Tree PostOrder Traversal
+
+        else if (menu == 4){
+
+        }
+
+        /** =========================================================================== */
+
+        /// Main Menu 5: To choose whether to end program or continue adding another student
+
+        else if (menu == 5){
+                limit2 = false;
+                cout << "\n" << Name << "'s confirmed Course(s): \n" << endl;
+                for (i = 0; i < z; i++){
+                    cout << "- " << CourseNo[i] << "\n";
+                }
+                cout << "\nTotal Credits: " << LimitedCredits << "\n" << endl;
+
+                cout << Name << "'s course(s) has been submitted\n\nHow would you like to proceed?" << endl;
+                cout << "Press 1 add another student" << endl;
+                cout << "Press 2 to end the program\n" << endl;
+                cout << "Input choice:";
+                cin >> progress;
+
+                if(progress == 1){
+                    cout << "";
+                }
+                else if(progress == 2){
+                    cout << "\nThank you for using College Course Application Program!" << endl;
+                    cout << "\nHave a nice day!" << endl;
+                limit = false;
+                }
+        }
+
+        else{
+            cout << "Invalid input! Please try again!" << endl;
+        }
+    }
+    }
+    return 0;
+
+}	
