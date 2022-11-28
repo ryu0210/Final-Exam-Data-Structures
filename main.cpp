@@ -237,9 +237,12 @@ int main(){
 		}
 
 	}
+	
+	/** Grade Point Average: (score/100) * 4 
+	    Grade Point Formula: GPA * Course Credit
+	    Cummulative GPA Formula: Total Grade Point/Total Credits Taken */
 
-
-	FinalGPA = Sampoerna.SemGPA(TotalGPA, creditsum);
+	FinalGPA = Sampoerna.SemGPA(TotalGPA, creditsum); // This is Cummulative GPA
 	
 	/** =========================================================================== */
 
