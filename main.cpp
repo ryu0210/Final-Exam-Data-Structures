@@ -544,6 +544,64 @@ int menu; /// Button to choose menu
         /// Main Menu 1: Print out all students recorded
 
         if (menu == 1){
+		if(deletor == true){
+                    if(sorter == true){
+                        cout << "\n" << Name << "'s Course(s): \n" << endl;
+                        sort(CourseNo,CourseNo+z,comparator);
+                        for(int i=0;i<z;i++)
+                        {
+                            cout << "- " << CourseNo[i] << endl;
+                        }
+                    }
+
+                    else{
+                        cout << "\n" << Name << "'s Course(s): \n" << endl;
+                        for(i = 0; i < z - 1; i++){
+                            cout << "- " << CourseNo[i] << endl;
+                        }
+                    }
+            }
+
+            else if(sorter == true){
+                    if(deletor == true){
+                        cout << "\n" << Name << "'s Course(s): \n" << endl;
+                        for(i = 0; i < z - 1; i++){
+                            cout << "- " << CourseNo[i] << endl;
+                        }
+                        cout << "\nTotal Credits: " << LimitedCredits << "\n" << endl;
+                    }
+                    else{
+                        cout << "\n" << Name << "'s Course(s): \n" << endl;
+                        sort(CourseNo,CourseNo+z,comparator);
+                        for(int i=0;i<z;i++){
+                        cout << "- " << CourseNo[i] << "\n";
+                        }
+                    }
+            }
+
+            else if(LemonTree == true){
+                cout << "\n" << Name << "'s Course(s): \n" << endl;
+                Node* root = new Node(t1);
+                root->left = new Node(t2);
+                root->right = new Node(t3);
+                root->left->left = new Node(t4);
+                root->right->left = new Node(t5);
+                root->right->right = new Node(t6);
+                root->right->left->left = new Node(t7);
+                root->right->left->right = new Node(t8);
+
+                postorder(root);
+            }
+
+
+            else{
+
+                cout << "\n" << Name << "'s Course(s): \n" << endl;
+                for (i = 0; i < z; i++){
+                    cout << "- " << CourseNo[i] << "\n";
+                }
+            }
+            cout << "\nTotal Credits: " << LimitedCredits << "\n" << endl;
 
             
         }
